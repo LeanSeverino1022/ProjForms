@@ -9,8 +9,8 @@
     </head>
     <body>
         <header>
-                <h1 class="header_title">Title</h1>
-                <p class="header_subtitle">Subtitle</p>
+                <h1 class="header_title">Negros Island Consumer Sales, Incorporated</h1>
+                <p class="header_subtitle">BREDCO International Port, Reclation Area, Cambodia Street, Bacolod City</p>
         </header>
         <div id="wrapper">                   
             <form action="index.html" method="post">
@@ -30,15 +30,17 @@
                     </select>
                     
                     <input type=button name"" value="Go" onclick="alert('Go button')">
-                    <input type=button name"" value="Add new" onclick="alert('Add new')">
-                    <input type=button name"" value="Browse" onclick="alert('Browse')">
-                    <input type=button name"" value="Close" onclick="alert('Close')">                        
+                    <!--<div id="inner_header_subgroup">-->
+                        <input type=button name"" value="Add new" id="add_newbtn" onclick="alert('Add new')">
+                        <input type=button name"" value="Browse" id="browsebtn" onclick="alert('Browse')">
+                        <input type=button name"" value="Close" id="closebtn" onclick="alert('Close')">
+                    <!--</div>                        -->
                 </div>            
                 <fieldset id="invoice_entry" class="">
                     <legend class=""> Invoice Entry <span class="legend_right_aligned">REC No. 00000[p]</span></legend>
                     <!--<div class="legend2">other text</div>-->
                     <div class="invoice_container">
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for="location">Location</label>
                             </div>
@@ -50,7 +52,7 @@
                             </div>
                         </div>
 
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for"name">Customer</label>
                             </div>
@@ -58,7 +60,7 @@
                                 <input type="text" id="name" name="customer_name">
                             </div>
                         </div>
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for"supplier_account">Customer</label>
                             </div>
@@ -72,18 +74,23 @@
                     </div>
 
                     <div class="invoice_container">
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for"document_type_num">Doc type number</label>
                             </div>
-                            <div class="invoice_container_input">
-                                <select id="document_type_num" name="doc_type_number">
+                            
+                            <div class="invoice_container_input"  >
+                                <select id="document_type_num" name="doc_type_number"> <!--style=" vertical-align: text-top;"-->
                                     <option value="">option</option>
                                     <option value="">option</option>
                                 </select>
+
+                                <input id="document_type_num_2" type="text" name="">
+                                
+                                <img src="" alt="***" style="width:25px; height: 100%; vertical-align: middle; margin-right: -40px; display: inline-block">
                             </div>
                         </div>
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for="payment_terms">Payment terms</label>
                             </div>
@@ -91,7 +98,7 @@
                                 <input type="text" id="payment_terms" name="payment_terms">
                             </div>
                         </div>
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                            <div class="invoice_container_lbl">
                                <label for="salesman">Salesman</label>
                             </div>
@@ -102,7 +109,7 @@
                     </div>
 
                     <div class="invoice_container">
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for="invoice_date">Invoice Date</label>
                             </div>
@@ -110,7 +117,7 @@
                                 <input type="date" id="invoice_date" name="invoice_date">
                             </div>
                         </div>
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for "document_type_num">Pricing</label>
                             </div>
@@ -122,7 +129,7 @@
                             </div>
                         </div>
 
-                        <div class="invoice_container_divider">
+                        <div class="invoice_container_block">
                             <div class="invoice_container_lbl">
                                 <label for="batch_number">Batch Number:</label>
                             </div>
@@ -138,13 +145,13 @@
                     <legend>Details</legend>
                     <div>
                         <label for="">Item</label>
-                        <input type="" id="" name="">   
+                        <input type="text" id="" name="">   
 
-                        <input type="button" value="search">
+                        <button type="">Search</button>
 
-                        <div id="item_description">
+                        <div id="item_description" style="display: inline-block; ">
                             <label for="">Description</label>
-                            <input type="text" id="" name="" size="50">
+                            <input type="text" id="" name="" size=50>
                         </div>
                     </div>
 
@@ -191,13 +198,13 @@
                          <div class="details_flex_item">
                             <label for=""> mfd</label>
                             <input type="number" id="totalAmount" name="">
-                        </div> 
+                        </div>  
                         <div class="details_flex_item">
                             <label for="">EXPD</label>
                             <input type="number" id="expd" name="">
                         </div> 
-                        <div class="details_flex_item">
-                            <input type="button" value="OK" style="height: 100%; width 100%;">
+                        <div class="details_flex_item" style="align-self: flex-end"> <!-- style="margin-left:-->
+                            <input type="button" value="OK" >
                         </div>
                     </div>
                 </fieldset>       

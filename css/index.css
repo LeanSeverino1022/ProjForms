@@ -11,12 +11,15 @@
 }
 
 * {    
-    box-sizing: border-box;    
+    box-sizing: border-box;
+    border: blue .5px solid;    
 }
 
 html {
     font-size: 16px;
+    line-height: 1.4;
 }
+    
 
 /*---------> GENERAL STYLES <---------*/
 
@@ -33,18 +36,22 @@ body {
 
 header {
     background-color: grey; 
-    text-align: center;
+ 
     position: relative;
-    left: 0;  
+    text-align: center;
+  
     width: 100%;
+    padding: 5px 0 10px;
+    margin: 0 0 10px;
 }
 
 legend{ 
     width:100%;
     height:30px;
     padding:5px;
+    margin-bottom: 10px;
     background: lightsteelblue;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     /*color:#fff;
     background:#46256a;
     font-size:1.3em;*/
@@ -60,25 +67,35 @@ legend{
 
 .header_title {
     margin: 0;
-    font-size: 30px;
+    font-size: 24px;
+    letter-spacing: 2px;  
 }
 
 .header_subtitle {
-    margin-top: 5px;
-    font-size: 18px;
+    margin: 0; 
 }
+
+/*#add_newbtn, 
+#browsebtn, */
+#closebtn {
+    /*margin-top: 5px;
+    border: red 2px solid;*/
+}
+
 
 fieldset {
     margin-top: 15px;
-    border: 0;
+    /*border: 0;*/
     padding: 0;
     position: relative;
 }
 
 input,
-select {
+select,
+button {
     /*border: red 2px solid;    */
     padding: 5px 8px;
+    margin: 0 2px 10px 0;
 }
 
     
@@ -89,27 +106,43 @@ select {
     flex-wrap: wrap;
 }
 
-.invoice_container_divider {
-    margin-bottom: 20px;
+.invoice_container_block {
+    /*margin-bottom: 20px;*/
+    /*border: red 2px solid;*/
 }
 
-.invoice_container_lbl,
-.invoice_container_input {
-    display: inline-block;    
-    /*margin-bottom: 15px;*/
-}
 
+/*--INVOICE ENTRY label/input pair--*/
 .invoice_container_lbl {
+    display: inline-block;     
+    margin-right: -3px; /*rmoves gaps between inline-block elements*/
     vertical-align: middle;
-    width: 34%; 
-    /*border: red 1px solid;*/
+    width: 30%; 
+    
 }
-.invoice_container_input { width: 64%; }
+
+.invoice_container_input {
+    display: inline-block;      
+    margin-right: -3px; /*rmoves gaps between inline-block elements*/
+    width: 70%; 
+}
 
 .invoice_container_input input,
 .invoice_container_input select{ 
     width: 100%;
-}    
+}
+
+#document_type_num{
+    width:55%;
+}
+#document_type_num_2 {
+    width: 30%;
+}
+
+.invoice_container_input  {
+    /*border: red 1px solid;*/
+  
+}
 /*    
 .flex_cosntainer {
     display: flex;
@@ -124,17 +157,17 @@ select {
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
-    /*justify-content: flex-start;*/
-    /*border: 1px solid blue;*/
-     /*-webkit-justify-content: flex-start;*/
-   /*align-items: flex-end;*/
-   /*border: red .5px solid;*/
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+      /*-webkit-justify-content: flex-start;*/
+    border: 1px solid blue; 
 }
 
 .details_flex_item {
 	/*-webkit-flex: 1 0 10%;*/
-	flex: 1 0 50px;
+	/*flex: 1 0 50px;*/
    /*border: 1px green solid;*/
+  
     font-size: 16px;
     margin: 5px;
 }
@@ -144,13 +177,6 @@ select {
     display: block;
 
 }
-.flex-item input {
-    /*width: 100px;*/
-
-}
-
-
-
 
 @media(min-width: 810px) {
 
