@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sample</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sales_report.css">
+    </head>
+    <body>
+        <header>
+                <h1 class="header_title">Negros Island Consumer Sales, Incorporated</h1>
+                <p class="header_subtitle">BREDCO International Port, Reclation Area, Cambodia Street, Bacolod City</p>
+        </header>
+        <div id="wrapper"> 
+
+            <form action="sales_report.html" method="post">
+                <fieldset class="width50 align-center">
+                    <legend class="">Per Supplier/Category/SEgment/SKU</legend>
+                    <!--label/input pairs below                        -->
+                        <div class="pms_lbl_input_pair"> 
+                            <div class="pms_lbl_of_input">
+                                <label for="from_date">From Date</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <input type="date" id="from_date" name="from_date">
+                            </div>
+                        </div>
+                                             
+                        <div class="pms_lbl_input_pair">
+                            <div class="pms_lbl_of_input">
+                                <label for="supplier">Supplier</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <select id="supplier" name="supplier">
+                                    <option value="">1234567890</option>
+                                    <option value="">123456785</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="pms_lbl_input_pair"> 
+                            <div class="pms_lbl_of_input">
+                                <label for="to_date">From Date</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <input type="date" id="to_date" name="to_date">
+                            </div>
+                        </div>
+
+                        <div class="pms_lbl_input_pair">
+                            <div class="pms_lbl_of_input">
+                                <label for="category">Category</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <select id="category" name="category">
+                                    <option value="">1234567890</option>
+                                    <option value="">123456785</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="pms_lbl_input_pair">
+                            <div class="pms_lbl_of_input">
+                                <label for="report_form">Report form</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <select id="report_form" name="report_form">
+                                    <option value="">1234567890</option>
+                                    <option value="">123456785</option>
+                                </select>
+                            </div>
+                        </div>          
+                        
+                        <div class="pms_lbl_input_pair">
+                            <div class="pms_lbl_of_input">
+                                <label for="segment">Segment</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <select id="segment" name="segment">
+                                    <option value="">1234567890</option>
+                                    <option value="">123456785</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="pms_lbl_input_pair">
+                            <div class="pms_lbl_of_input">
+                                <label for="output">Output</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <select id="output" name="output">
+                                    <option value="">1234567890</option>
+                                    <option value="">123456785</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="pms_lbl_input_pair">
+                            <div class="pms_lbl_of_input">
+                                <label for="product">Product</label>
+                            </div>
+                            <div class="pms_input_of_lbl">
+                                <select id="product" name="product">
+                                    <option value="">1234567890</option>
+                                    <option value="">123456785</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="button_group" style="text-align: center; border-top: 2px solid; padding-top: 10px;">
+                            <button type="submit">Proceed with report</button>
+                            <button type="submit">Close</button>
+                            </div>
+                        </div>                       
+
+                    </fieldset>
+            </form>
+                   
+        </div>    
+    </body>   
+    
+</html>
+
+
+<!--
+
+- button vs input type button
+
+
+-->

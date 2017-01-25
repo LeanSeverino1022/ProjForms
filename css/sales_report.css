@@ -1,0 +1,188 @@
+/* 001 : delete if display != inline block
+   002: 
+
+*/
+
+.debug {
+     border: red 2px solid;
+}
+
+* {    
+    box-sizing: border-box;
+    /*border: blue .5px solid;    */
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width33 {
+    width: 33%;
+}
+
+.width25 {
+    width: 25%;
+}
+
+.align-center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+
+/*---------> GENERAL STYLES <---------*/
+
+body {
+    font-size: 1rem;
+    min-width: 530px;
+}
+
+#wrapper {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: grey; 
+ 
+    position: relative;
+    text-align: center;
+  
+    width: 100%;
+    padding: 5px 0 10px;
+    margin: 0 0 10px;
+    border: 1px solid green;
+}
+
+fieldset {
+    margin-top: 15px;
+    /*border: 0;*/
+    padding: 0;
+    position: relative; 
+}
+
+legend { 
+    width:100%;
+    height:30px;
+    padding:5px;
+    margin-bottom: 10px;
+    background: lightsteelblue;
+    /*margin-bottom: 20px;*/
+    /*color:#fff;
+    background:#46256a;
+    font-size:1.3em;*/
+}
+
+.legend_right_aligned {
+    text-align: right;
+    position: absolute;
+    right: 25px;
+}
+
+input[type="date"] {
+     padding: 0 5px;   
+}
+
+input,
+select,
+button,
+label {
+    /*border: red 2px solid;    */
+    padding: 5px;
+    margin: 0 10px 10px 0;
+}
+
+/*---------> HEADER styles <---------*/
+
+.header_title {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 2px;  
+}
+
+.header_subtitle {
+    margin: 0; 
+}
+
+/*#add_newbtn, 
+#browsebtn, */
+#closebtn {
+    /*margin-top: 5px;
+    border: red 2px solid;*/
+}
+    
+
+/* to library: in progress*/
+
+.pms_lbl_input_pair {
+   
+    /*for inline-block*/
+    display: inline-block;
+    margin-right: -3px; /*-3px rmoves gaps between inline-block elements, Del if display != inline-block*/
+
+    /*padding: 5px 8px*/
+    padding-right: 15px;   
+    /*text-align: right;   */
+    width: 50%;
+}
+
+.pms_lbl_of_input {
+    display: inline-block;   
+    margin-right: -3px; /*rmoves gaps between inline-block elements, Del if display != inline-block*/
+    
+    vertical-align: middle;
+    width: 50%;         
+}
+
+.pms_input_of_lbl {
+    display: inline-block;   
+    margin-right: -3px; /*rmoves gaps between inline-block elements. Del if display!= inline-block*/
+
+    width: 50%;       
+}
+
+.pms_pair_block {
+/*not used yet - make this the default*/
+    display: block;
+    width: 100%;
+}
+
+.pms_pair_inline {
+/*not used yet*/
+    display: inline-block;
+    margin-right: -3px; /*rmoves gaps between inline-block elements*/
+}
+
+/* end to library: in progress*/
+
+.pms_lbl_input_pair input,
+.pms_lbl_input_pair select{ 
+    width: 100%;
+    /*border: red 2px solid;*/
+}
+
+
+
+@media(min-width: 0px) {
+
+    /*INVOICE-ENTRY GROUP*/       
+
+}

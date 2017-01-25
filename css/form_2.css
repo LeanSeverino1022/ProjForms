@@ -1,0 +1,185 @@
+.debug {
+     border: red 2px solid;
+}
+
+* {    
+    box-sizing: border-box;
+    border: blue .5px solid;    
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.4;
+}
+    
+
+/*---------> GENERAL STYLES <---------*/
+
+body {
+    font-size: 1rem;
+    min-width: 530px;
+}
+
+#wrapper {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: grey; 
+ 
+    position: relative;
+    text-align: center;
+  
+    width: 100%;
+    padding: 5px 0 10px;
+    margin: 0 0 10px;
+}
+
+legend{ 
+    width:100%;
+    height:30px;
+    padding:5px;
+    margin-bottom: 10px;
+    background: lightsteelblue;
+    /*margin-bottom: 20px;*/
+    /*color:#fff;
+    background:#46256a;
+    font-size:1.3em;*/
+}
+
+.legend_right_aligned {
+    text-align: right;
+    position: absolute;
+    right: 25px;
+}
+
+/*---------> HEADER styles <---------*/
+
+.header_title {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 2px;  
+}
+
+.header_subtitle {
+    margin: 0; 
+}
+
+/*#add_newbtn, 
+#browsebtn, */
+#closebtn {
+    /*margin-top: 5px;
+    border: red 2px solid;*/
+}
+
+
+fieldset {
+    margin-top: 15px;
+    /*border: 0;*/
+    padding: 0;
+    position: relative;
+}
+
+input,
+select,
+button {
+    /*border: red 2px solid;    */
+    padding: 5px 8px;
+    margin: 0 2px 10px 0;
+}
+
+    
+/*INVOICE-ENTRY GROUP*/
+
+.flex_fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.invoice_container_block {
+    /*margin-bottom: 20px;*/
+    /*border: red 2px solid;*/
+}
+
+
+/*--INVOICE ENTRY label/input pair--*/
+.invoice_container_lbl {
+    display: inline-block;     
+    margin-right: -3px; /*rmoves gaps between inline-block elements*/
+    vertical-align: middle;
+    width: 30%; 
+    
+}
+
+.invoice_container_input {
+    display: inline-block;      
+    margin-right: -3px; /*rmoves gaps between inline-block elements*/
+    width: 70%; 
+}
+
+.invoice_container_input input,
+.invoice_container_input select{ 
+    width: 100%;
+}
+
+#document_type_num{
+    width:55%;
+}
+#document_type_num_2 {
+    width: 30%;
+}
+
+.invoice_container_input  {
+    /*border: red 1px solid;*/
+  
+}
+/*    
+.flex_cosntainer {
+    display: flex;
+ 
+    flex-flow: row wrap;
+    
+    justify-content: space-around;
+}*/
+
+.flex_container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+      /*-webkit-justify-content: flex-start;*/
+    border: 1px solid blue; 
+}
+
+.details_flex_item {
+	/*-webkit-flex: 1 0 10%;*/
+	/*flex: 1 0 50px;*/
+   /*border: 1px green solid;*/
+  
+    font-size: 16px;
+    margin: 5px;
+}
+
+.details_flex_item input {
+    width: 120px;
+    display: block;
+
+}
+
+@media(min-width: 810px) {
+
+    /*INVOICE-ENTRY GROUP*/
+    .invoice_container {
+        width: 33.33%;
+        padding-right: 20px;
+        display: inline-block;
+        text-align: left;
+        margin-right: -3px; /*removes gaps between elements*/
+    }
+        
+
+}
