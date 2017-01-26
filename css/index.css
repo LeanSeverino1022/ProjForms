@@ -12,7 +12,7 @@
 
 * {    
     box-sizing: border-box;
-    border: blue .5px solid;    
+    /*border: blue .5px solid;    */
 }
 
 html {
@@ -30,49 +30,66 @@ body {
 
 #wrapper {
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;    
 }
 
-header {
+
+input,
+select,
+button,
+label {
+    /*border: red 2px solid;    */
+    padding: 5px;
+    /*margin: 0 10px 10px 0;*/
+}
+
+label {
+    text-align: right;
+}
+
+
+/*MAIN HEADER*/
+.page_header {
     background-color: grey; 
  
     position: relative;
-    text-align: center;
-  
-    width: 100%;
+    text-align: center;  
+ 
     padding: 5px 0 10px;
     margin: 0 0 10px;
 }
 
-legend{ 
-    width:100%;
-    height:30px;
-    padding:5px;
-    margin-bottom: 10px;
-    background: lightsteelblue;
-    /*margin-bottom: 20px;*/
-    /*color:#fff;
-    background:#46256a;
-    font-size:1.3em;*/
-}
-
-.legend_right_aligned {
-    text-align: right;
+.p5_topright {
+    /*relative to the first parent element that has a "RELATIVE" position.*/
     position: absolute;
-    right: 25px;
+    margin: 0;
+    right: 10px;
+    top: 5px;       
 }
 
-/*---------> HEADER styles <---------*/
-
-.header_title {
+.page_title {
     margin: 0;
     font-size: 24px;
     letter-spacing: 2px;  
 }
 
-.header_subtitle {
+.page_subtitle {
     margin: 0; 
+}
+
+.p5_fieldset {
+    padding: 0;
+    margin-bottom: 15px;
+
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.p5_legend { 
+    width:100%;
+    height:30px;
+    padding:5px;
+    margin-bottom: 10px;
+    background: lightsteelblue;  
 }
 
 /*#add_newbtn, 
@@ -82,11 +99,8 @@ legend{
     border: red 2px solid;*/
 }
 
-
-fieldset {
-    margin-top: 15px;
-    /*border: 0;*/
-    padding: 0;
+fieldset,
+.pms_header {
     position: relative;
 }
 
@@ -117,8 +131,8 @@ button {
     display: inline-block;     
     margin-right: -3px; /*rmoves gaps between inline-block elements*/
     vertical-align: middle;
-    width: 30%; 
-    
+    text-align: right;
+    width: 30%;     
 }
 
 .invoice_container_input {
@@ -160,7 +174,6 @@ button {
     /*justify-content: space-between;*/
     justify-content: flex-start;
       /*-webkit-justify-content: flex-start;*/
-    border: 1px solid blue; 
 }
 
 .details_flex_item {
@@ -183,9 +196,9 @@ button {
     /*INVOICE-ENTRY GROUP*/
     .invoice_container {
         width: 33.33%;
-        padding-right: 20px;
+        padding: 0 10px;
         display: inline-block;
-        text-align: left;
+        /*text-align: right;*/
         margin-right: -3px; /*removes gaps between elements*/
     }
         
